@@ -1,159 +1,235 @@
 <script> 
 
-function porta_misteriosa(){
-    alert ('voce entrou em uma sala')
-    alert('voce encontrou um bau misterioso e nesse bau havia 3 itens uma espada ,longa e dourada,uma armadura linda e reluzente coma as estrela,e um cogumelo misterioso vermelha com bolinhas brancas.')
-    escolha_item = prompt ('qual o primeiro item que voce gostaria de pegar? \n1- espada longa e dourada \n2 armadura linda  e reluzente como as estrelas \n3 cogumelo misterioso vermelho com bolinhas brancas . qual voce escolhe ?')
-
-    while (escolha_item <1 || escolha_item>3 ){
-        escolha_item= prompt ('irmao , ta brincando com o sistema? escolhe um item direito ,senao voce vai ficar sem nada \n\n1 -espada longa e dourada \n2- armadura linda e reluzente como as estrelas \n3- cogumelo misterioso vermelho com bolinhas brancas .qual voce escolhe?')
-    }
-    alert('ao escolher o item todo o bau se fechou e voce nao conseguiu abrir mais ele para pegar o restante dos itens')
+    function porta_misteriosa(){
+        alert ('voce entrou em uma sala')
+        alert('voce encontrou um bau misterioso e nesse bau havia 3 itens uma espada ,longa e dourada,uma armadura linda e reluzente coma as estrela,e um cogumelo misterioso vermelha com bolinhas brancas.')
+        escolha_item = prompt ('qual o primeiro item que voce gostaria de pegar? \n1- espada longa e dourada \n2 armadura linda  e reluzente como as estrelas \n3 cogumelo misterioso vermelho com bolinhas brancas . qual voce escolhe ?')
     
-    return escolha_item
-}
-
-function corredor(){
-    alert('voce decidiu entrar no corredor ,andando mais a frente voce se depara com uma figura ,um \'serzinho\' misterioso, quando ele se depara com voce ele começa a gritar: \n - VOCE NAO VAI PASSAR PELO O GOLINHO ,GOLIN VAI IMPEDIR VOCE ')
-    alert ('GOLIN comecou a vim em sua direçao ,voce sacou sua arma e foi de frente com ele para uma batalha')
-} 
-
-
-function porta_anagrama(){
-    alert ('voce escolheu a porta de anagramas ,apos entrar voce percebeu que havia varios artefatos do antigo egito , e numa mesa banhada a ouro com anagramas dos antigos faraos e encima tinha uma garrafa que aumentava a sua vida do lado tinha um capacete mais reluzente que o amanhecer do sol , uma Khopesh mais afiado que um obsidiana,ela brilha mais que uma estrela')
-    escolha_item2= prompt('qual sera a sua escolha \n1-garrava de vida \n2-capecete reluzente \n3-Khopesh afiada ')
-
-    while (escolha_item2 <1 || escolha_item2>3){
-        escolha_item2 = prompt('ta de brincadeira ne ,nessa altura do campeonato e voce fazendo isso?esolhe um logo po\n1-garrava de vida \n2-capecete reluzente \n3-Khopesh afiada' )
-    } 
-
-    if(escolha_item2 == 1){
-        vida_jogador = vida_jogador + 30
-        alert('depois de tomar a garrafa (para de ser estranho tomando coisa estranha ai ) voce se sente revigorado cheio de disposiçao para novas aventuras ')
-    } 
-    else if(escolha_item2 == 2){
-        def_jogador =def_jogador +15
-        alert('apos voce escolher o capecete voce ve as milhares de batalhas que aquele capaecete viveu no antigo olimpo e nisso voce ve que aquele capacete era do Hermes,e nisso voce ganha mais 15 de defesa')
+        while (escolha_item <1 || escolha_item>3 ){
+            escolha_item= prompt ('irmao , ta brincando com o sistema? escolhe um item direito ,senao voce vai ficar sem nada \n\n1 -espada longa e dourada \n2- armadura linda e reluzente como as estrelas \n3- cogumelo misterioso vermelho com bolinhas brancas .qual voce escolhe?')
+        }
+        
+        
+        alert('ao escolher o item todo o bau se fechou e voce nao conseguiu abrir mais ele para pegar o restante dos itens')
+        
+        return escolha_item
     }
-    else if(escolha_item2==3){
-        atk_jogador=atk_jogador +10
-        alert('boa escolha a Khopesh era pertecente ao deus anubis ,e nisso voce sente as milhares de mortes que ela causou e voce se sente mais poderoso ,voce ganha mais 10 de ataque ')
-    }  
-}
-function porta_aco(){
-    alert('depois de entrar pela a porta voce olha e repara que aquela sala é da era medieval e dentro haia varias armaduras ,livros e espadas e escudos grandes e no centro havia uma tavola redonda do Rei Arthur e nela havia um livro de estrategias ,um livro ensinando a fazer uma poçao de vida, e um gládio afiado capaz de cortar um fio de cabelo ')
-    escolha_item3= prompt('e agora qual sera a sua  escolha?\n1-O livro de estrategias\n2-O livro de poçoes\n3-O gládio afiado')
-    while(escolha_item3 <1  || escolha_item3>3 ){
-        escolha_item3 = prompt('para de ser assim, escolhe um ai po\n1-O livro de estrategias\n2-O livro de poçoes\n3-O gládio afiado ')
+    
+    function corredor(){
+        alert('voce esta no corredor agora  ,andando mais a frente voce se depara com uma figura ,um \'ser\' misterioso, quando ele se depara com voce ele começa a gritar: \n - VOCE NAO PASSARA,VOCE NAO É PÁREO CONTRA MIM,MÍSERO MORTAL HAHAHA ')
+        alert ('GOLIN comecou a vim em sua direçao ,voce sacou sua arma e foi de frente com ele para uma batalha')
+    } 
+    
+    
+    function porta_anagrama(){
+        alert ('voce escolheu a porta de anagramas ,apos entrar voce percebeu que havia varios artefatos do antigo egito , e numa mesa banhada a ouro com anagramas dos antigos faraos e encima tinha uma garrafa que aumentava a sua vida do lado tinha um capacete mais reluzente que o amanhecer do sol , uma Khopesh mais afiado que um obsidiana,ela brilha mais que uma estrela')
+        escolha_item2= prompt('qual sera a sua escolha \n1-garrava de vida \n2-capecete reluzente \n3-Khopesh afiada ')
+    
+        while (escolha_item2 <1 || escolha_item2>3){
+            escolha_item2 = prompt('ta de brincadeira ne ,nessa altura do campeonato e voce fazendo isso?esolhe um logo po\n1-garrava de vida \n2-capecete reluzente \n3-Khopesh afiada' )
+        } 
+    
+        if(escolha_item2 == 1){
+            vida_jogador = vida_jogador + 30
+            alert('depois de tomar a garrafa (para de ser estranho tomando coisa estranha ai ) voce se sente revigorado cheio de disposiçao para novas aventuras ')
+        } 
+        else if(escolha_item2 == 2){
+            def_jogador =def_jogador +15
+            alert('apos voce escolher o capecete voce ve as milhares de batalhas que aquele capaecete viveu no antigo olimpo e nisso voce ve que aquele capacete era do Hermes,e nisso voce ganha mais 15 de defesa')
+        }
+        else if(escolha_item2==3){
+            atk_jogador=atk_jogador +10
+            alert('boa escolha a Khopesh era pertecente ao deus anubis ,e nisso voce sente as milhares de mortes que ela causou e voce se sente mais poderoso ,voce ganha mais 10 de ataque ')
+        }  
     }
-    if (escolha_item3==1){
-        def_jogador=def_jogador +10 
-        alert('apos abrir o livro ,voce recebe os conhecimentos dos estrategistas da era romana,nisso voce sente mais seguro e preparado para a batalha final,voce ganha mais 10 de ataque')
-}
-            else if(escolha_item3==2){
+    function porta_aco(){
+        alert('depois de entrar pela a porta voce olha e repara que aquela sala é da era medieval e dentro haia varias armaduras ,livros e espadas e escudos grandes e no centro havia uma tavola redonda do Rei Arthur e nela havia um livro de estrategias ,um livro ensinando a fazer uma poçao de vida, e um gládio afiado capaz de cortar um fio de cabelo ')
+        escolha_item3= prompt('e agora qual sera a sua  escolha?\n1-O livro de estrategias\n2-O livro de poçoes\n3-O gládio afiado')
+        while(escolha_item3 <1  || escolha_item3>3 ){
+            escolha_item3 = prompt('para de ser assim, escolhe um ai po\n1-O livro de estrategias\n2-O livro de poçoes\n3-O gládio afiado ')
+        }
+        if (escolha_item3==1){
+            def_jogador=def_jogador +10 
+            alert('apos abrir o livro ,voce recebe os conhecimentos dos estrategistas da era romana,nisso voce sente mais seguro e preparado para a batalha final,voce ganha mais 10 de ataque')
+        }
+        else if(escolha_item3==2){
             vida_jogador =vida_jogador*2
             alert('depois de ver o livro de pocao,voce percebeu que havia um pratilheira com os ingredientes ,apos tomar a pocao sua vida dobrou')}
+            
+            else if (escolha_item3==3){
+                atk_jogador=atk_jogador +10
+                alert('a entao voce se encantou pela a gládio ,ao enpunhar a espada voce sente o espirito mediaval que nela existe,e com isso voce ganha mais 10 de ataque ')
+            }
+        }
         
-                else if (escolha_item3==3){
-                    atk_jogador=atk_jogador +10
-                    alert('a entao voce se encantou pela a gládio ,ao enpunhar a espada voce sente o espirito mediaval que nela existe,e com isso voce ganha mais 10 de ataque ')
-                }
-}
-
-var nome=''
-var atk_jogador =15
-var def_jogador =10
-var vida_jogador = 30
-var ouro=0
-
-nome = prompt ('ola jovem aventuteiro , me diga qual o seu nome?')
-alert (nome +'  seja bem vindo a caverna do DRAGAO')
-
-alert ('voce caiu em um buraco e ao se levantar vace se deparou com a seguinte escolha ,ao seu lado direito voce nota uma porta grande com madeira avermelhada e com o aspecto de velha caindo aos pedaços , e do lado esquerdo voce nota um corredor longo e escuro sem conseguir ver o final ')
-
-
-escolha = prompt ('qual vai ser a sua decisao\n1- voce escolhe seguir a direita (porta misteriosa)\n2- voce escolhe seguir a esquerda (corredor escuro)')
-
-if(escolha =='1'){
-    item = porta_misteriosa()
+        function corredor_1(){
+            alert('voce é um bichao mesmo em doido ,tambom entao se voce esta com essa orda toda ,segue o fim do corredor para a batalha.')
+        }
+                var nome=''
+                var atk_jogador =25
+                var def_jogador =15
+                var vida_jogador = 40
+                var ouro=0
+                
+                nome = prompt ('ola jovem aventuteiro , me diga qual o seu nome?')
+                alert (nome +'  seja bem vindo a caverna do DRAGAO')
+                
+                alert ('voce caiu em um buraco e ao se levantar vace se deparou com a seguinte escolha ,ao seu lado direito voce nota uma porta grande com madeira avermelhada e com o aspecto de velha caindo aos pedaços , e do lado esquerdo voce nota um corredor longo e escuro sem conseguir ver o final ')
+    
+    
+    escolha = prompt ('qual vai ser a sua decisao\n1- voce escolhe seguir a direita (porta misteriosa)\n2- voce escolhe seguir a esquerda (corredor escuro)')
+    
+    if(escolha =='1'){
+        item = porta_misteriosa()
         if (item ==1){
             atk_jogador = atk_jogador +5 
-            alert ('ao segurar a espada voce sente um força de vontade percorrendo seu corpo com a sabedoria e destreza ao rei antigo')
-                } else if (item==2){
+                alert ('ao segurar a espada voce sente um força de vontade percorrendo seu corpo com a sabedoria e destreza ao rei antigo')
+            } else if (item==2){
                 def_jogador = def_jogador + 10
-                alert ('ao vistir a armadura ,voce sente um cosmo entrando em seu corpo com as almas do submundo em seu corpo')
-                        }else if (item ==3){
-                vida_jogador =vida_jogador +30 
-                alert('ao consumir o cugumelo (voce é estranho , comendo coisas achadas assim do nada)voce sente como se tivesse duplicado de tamanho')
-            }
-            alert ('voce sente sua força aumentando \n\natack : ' + atk_jogador + '\ndefesa' + 'defesa:'  + def_jogador + '\nvida :' + vida_jogador)
-            alert('Você sai da sala e vai para o corredor...')
-            corredor(); 
-            
-  }
-  if (escolha == '2'){
-    corredor()
-  } 
- 
-var atk_golin = 12
-var def_golin = 10
-var vida_golin = 20
- 
-while (vida_golin > 0 || vida_jogador > 0 ){
- 
-    dano_jogador = atk_jogador - def_golin
-    if (dano_jogador > 0){
-        vida_golin = vida_golin - dano_jogador
-        alert(nome + ' deu ' + dano_jogador + ' de dano no Golen')
-    } else {
-        alert(nome + ' não conseguiu dar dano no Golen')
-    }
- 
-    dano_golin = atk_golin - def_jogador 
-    if (dano_golin > 0){
-        vida_jogador = vida_jogador - dano_golin
-        alert('Golen deu ' + dano_golin + ' de dano no ' + nome)
-    } else {
-        alert('Golen não conseguiu dar dano no ' + nome)
-    }
- 
-    if (vida_golin <= 0) {
-      alert('Parabéns, ' + nome + '! Você derrotou o Golen!');
-      ouro += 50
-      alert('Você ganhou 50 de ouro!');
-      alert('Seu status atual:\nVida: ' + vida_jogador + '\nDefesa: ' + def_jogador + '\nAtaque: ' + atk_jogador);
-      break;
-    } else if (vida_jogador <= 0) {
-      alert('Infelizmente, ' + nome + ', você foi derrotado pelo Golen!');
-      break;
-    }
-  }
- alert('Você tem ' + ouro + ' de ouro.')
-
-
-alert ('apos passar da batalha com o golin ,no fim do corredor voce se depara com uma caveira com um cajado magico no meio das duas portas e ele te diz: ')
-alert('Agora voce vai ter escolher qual das portas voce vai querer seguir,no lado esquerdo tem uma sala com uma porta cheio de anagramas antigos banhados a ouro e por dentro é misterioso,no lado direito tem uma porta de aço maciço de 30 cm de espessura enferrujada' )
-
-var escolha_caminho=prompt ('qual sera o seu novo caminho ?\n1-lado direito com a porta cheia de anagramas\n2-lado esquerdo da porta de aço maciço')
-
-if(escolha_caminho == '1'){
-    porta_anagrama();
-} else if(escolha_caminho == '2'){
-    porta_aco()
+                    alert ('ao vistir a armadura ,voce sente um cosmo entrando em seu corpo com as almas do submundo em seu corpo')
+                            }else if (item ==3){
+                                vida_jogador =vida_jogador +30 
+                                alert('ao consumir o cugumelo (voce é estranho , comendo coisas achadas assim do nada)voce sente como se tivesse duplicado de tamanho')
+                            }
+                            alert ('voce sente sua força aumentando \n\natack : ' + atk_jogador + '\ndefesa' + 'defesa:'  + def_jogador + '\nvida :' + vida_jogador)
+                            alert('Você sai da sala e vai para o corredor...')
+                            corredor(); 
+                            
+                        }
+                        if (escolha == '2'){
+                            corredor()
+                        } 
+                        
+                        function corredor_2(){
+                            alert('voce vai querer correr agora??,nessa altura do campeonato po ,ai voce me quebra ne amigo! ')
+                            
+                        }
+    var atk_golin = 12
+    var def_golin = 10
+    var vida_golin = 20
+     
+    while (vida_golin > 0 || vida_jogador > 0 ){
+     
+        dano_jogador = atk_jogador - def_golin
+        if (dano_jogador > 0){
+            vida_golin = vida_golin - dano_jogador
+            alert(nome + ' deu ' + dano_jogador + ' de dano no Golen')
+        } else {
+            alert(nome + ' não conseguiu dar dano no Golen')
+        }
+     
+        dano_golin = atk_golin - def_jogador 
+        if (dano_golin > 0){
+            vida_jogador = vida_jogador - dano_golin
+            alert('Golen deu ' + dano_golin + ' de dano no ' + nome)
+        } else {
+            alert('Golen não conseguiu dar dano no ' + nome)
+        }
+     
+        if (vida_golin <= 0) {
+          alert('Parabéns, ' + nome + '! Você derrotou o Golen!');
+          ouro += 50
+          alert('Você ganhou 50 de ouro!');
+          alert('Seu status atual:\nVida: ' + vida_jogador + '\nDefesa: ' + def_jogador + '\nAtaque: ' + atk_jogador);
+          break;
+        } else if (vida_jogador <= 0) {
+          alert('Infelizmente, ' + nome + ', você foi derrotado pelo Golen!');
+          break;
+        }
+      }
+     alert('Você tem ' + ouro + ' de ouro.')
     
+    
+    alert ('apos passar da batalha com o golin ,no fim do corredor voce se depara com uma caveira com um cajado magico no meio das duas portas e ele te diz: ')
+    alert('Agora voce vai ter escolher qual das portas voce vai querer seguir,no lado esquerdo tem uma sala com uma porta cheio de anagramas antigos banhados a ouro e por dentro é misterioso,no lado direito tem uma porta de aço maciço de 30 cm de espessura enferrujada' )
+    
+    var escolha_caminho=prompt ('qual sera o seu novo caminho ?\n1-lado direito com a porta cheia de anagramas\n2-lado esquerdo da porta de aço maciço')
+    
+    if(escolha_caminho == '1'){
+        porta_anagrama();
+    } else if(escolha_caminho == '2'){
+        porta_aco()
+        
+    }
+    alert('seu status atual:\nVida: '+vida_jogador +'\nDefesa: '+def_jogador +'\nAtaque:'+atk_jogador)     
+    
+    alert('depois que vc pegou o item voce saiu da sala ')
+    alert('apos sair da sala voce pega uma tocha para iluminar o coredor que acaba de entrar,e no fim dele voce uma luz fraca no final ,indo para a kuz no fim do tunel ,percebe-se uma sombra de um ser misterioso,e nisso coce se da conta que ali sera a batalha final para sair daquela caverna fria ,sombria e miseriosa.')
+    var corredor_final = prompt('voce tem certeza que quer fazer isso ?')
+
+if (corredor_final==1){
+    corredor_1();
+    alert('Você escolheu seguir em frente para a batalha final!');
+} else if (corredor_final==2){
+    corredor_2()
+    alert( 'Você decidiu fugir da batalha final!');
+} else {
+    while(corredor_final<1 || corredor_final>2 ){
+        alert('sem escapatoria ,foguete nao da re ,o fim é triste ,escolhe logo pra acabar')
+        corredor_final = prompt('voce tem certeza que quer fazer isso ?')
+    }
 }
-alert('seu status atual:\nVida: '+vida_jogador +'\nDefesa: '+def_jogador +'\nAtaque:'+atk_jogador)     
+alert('apos chegar no fim do tunel ,o gigante dragao que ali morava,acodou com os passos,ele acordou furioso apos estar em sua hibernaçao de inverno e com isso ele te ameaça atacar e assim que começa a grande batalha!!!!')
 
-alert('depois que vc pegou o item voce saiu da sala ')
+var atk_dragao = 25
+var def_dragao = 15
+var vida_dragao = 50
+
+while (vida_dragao > 0 && vida_jogador > 0 ){
+     
+    dano_jogador = atk_jogador - def_dragao
+    if (dano_jogador > 0){
+        vida_dragao = vida_dragao - dano_jogador
+        alert(nome + ' deu ' + dano_jogador + ' de dano no Dragão')
+    } else {
+        alert(nome + ' não conseguiu dar dano no Dragão')
+    }
+     
+    if (vida_dragao <= 0) {
+      break;
+    }
+     
+    dano_dragao = atk_dragao - def_jogador 
+    if (dano_dragao > 0){
+        vida_jogador = vida_jogador - dano_dragao
+        alert('Dragão deu ' + dano_dragao + ' de dano no ' + nome)
+    } else {
+        alert('Dragão não conseguiu dar dano no ' + nome)
+    }
+     
+    if (vida_jogador <= 0) {
+      break;
+    }
+}
+
+if (vida_dragao <= 0) {
+  alert('Parabéns, ' + nome + '! Você derrotou o Dragão!');
+  ouro += 100
+  alert('Você ganhou 100 de ouro!');
+  alert('Seu status atual:\nVida: ' + vida_jogador + '\nDefesa: ' + def_jogador + '\nAtaque: ' + atk_jogador);
+} else {
+  alert('Infelizmente, ' + nome + ', você foi derrotado pelo Dragão!');
+}
+alert('Você tem ' + ouro + ' de ouro.');
 
 
+alert('Apos a batalha ,voce derrotou o dragao e o caminho para sair da caverna foi a aberto,depois que voce saiu da caverna \ne percebeu era apenas um sonho mirabulante da sua cabeça,mas mesmo assim voce acordou com a armadura e os efeitos das poçoes e ao se levantar as ' + ouro + 'moedas de ouro caiu do seus bolsos e nisso voce fez melhorias no proximo acampamento que voce passou')
 
+alert('Muito obrigado por jogar ,foi uma experiencia incirvel\nvolte sempre que puder ')
 
+    
+       
+        
+    
 
-
-
-
-
-
-
-</script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
